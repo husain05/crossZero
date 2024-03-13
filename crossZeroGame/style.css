@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+  }
+  html,
+  body {
+    height: 100%;
+    width: 100%;
+  }
+  *::selection {
+    background-color: #fff;
+    color: #ffda89;
+  }
+  body {
+    background-color: #4e776c;
+  }
+  #wrapper {
+    /* background-color: #ffda89; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+    transition: all 1s;
+  }
+  #wrapper h1 {
+    font-size: 3vw;
+    font-weight: 900;
+    color: #ffffff;
+    margin: 3rem;
+  }
+  .modes {
+    display: flex;
+    align-items: center;
+    margin-left: 80vw;
+    /* position: absolute; */
+  }
+  .mode {
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .dark-mode i {
+    /* font-size: 5rem; */
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .dark-mode {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 1s;
+    background-color: #0b0810;
+  }
+  .light-mode {
+    background-color: #ffffff;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 1s; /* opacity: ; */
+    scale: 0;
+  }
+  .active {
+    background: #ffffff;
+    /* opacity: 0; */
+    scale: 1;
+  }
+  .drkmood {
+    background-color: #090713;
+  }
+  .container {
+    background-color: #f5f5f5;
+    width: 30rem;
+    height: 30rem;
+    display: flex;
+    align-items: center;
+    border-radius: 1rem;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-evenly;
+    justify-items: center;
+    align-content: space-evenly;
+    align-items: center;
+  }
+  .box {
+    background-color: #ffc876;
+    width: 7rem;
+    height: 7rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: all 0.5s;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5rem;
+    font-weight: 800;
+  }
+  .box:hover {
+    background-color: #ffdca9;
+    transform: translate(5px);
+  }
+  .card1,
+  .card2,
+  .card3 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    /* gap: 3.5rem; */
+  }
+  
+  .win {
+    background-color: #009723;
+  }
+  
+  
+  .btn {
+    width: 10vw;
+    height: 4.5vh;
+    background-color: #f4f4f4;
+    padding: 1vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: all 1s;
+    /* font-size: 1vw; */
+  }
+  .btn:hover {
+    background: #eeeeee;
+  }
+  /* .active2 {
+    scale: 0;
+  } */
+  
+  .bottomBtn{
+    height:1vh;
+    width:100%;
+  }
+  /* ******************************************************************************************************* */
+  
+  @media only screen and (max-width: 375px) {
+    #wrapper h1 {
+      font-size: 10vw;
+      font-weight: 900;
+      color: #ffffff;
+      margin: 3rem;
+    }
+  
+    .box {
+      position: relative;
+      background-color: #ffc876;
+      width: 4rem;
+      height: 4rem;
+      border-radius: 5px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #ffffff;
+      font-size: 12vw;
+    }
+  
+    .container {
+      width: 20rem;
+      height: 20rem;
+    }
+  
+    .card1,
+    .card2,
+    .card3 {
+      /* display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between; */
+      gap: 2rem;
+    }
+    .btn {
+      width: 35vw;
+      height: 4.5vh;
+      background-color: #f4f4f4;
+      padding: 1vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 1rem;
+      cursor: pointer;
+      transition: all 1s;
+      font-size: 3vw;
+    }
+    .btn:hover {
+      background: #eeeeee;
+    }
+    /* .active2 {
+      scale: 0;
+    } */
+    .modes{
+      position: relative;
+      top: 2%;
+     left: -2%;
+    }
+    #wrapper{
+      padding-bottom: 20vw;
+    }
+    .win{
+      background-color: #009723;
+    }
+  }
